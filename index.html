@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Portfolio | Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">Blog<span>Portfolio</span></a>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Business Analytics Insights</h1>
+                <p>Sharing knowledge and expertise in business analytics and data-driven decision making.</p>
+                <a href="blog.html" class="btn btn-primary">Read My Blog</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="recent-posts">
+        <div class="container">
+            <div class="section-header">
+                <h2>Recent Posts</h2>
+                <a href="blog.html" class="view-all">View All Posts</a>
+            </div>
+            <div class="posts-grid" id="recent-posts-container">
+                <!-- Posts will be loaded dynamically via JavaScript -->
+                <article class="post-card">
+                    <div class="post-image">
+                        <img src="images/post1.jpg" alt="Data Analysis">
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="post-date">May 9, 2025</span>
+                            <span class="post-category">Data Analysis</span>
+                        </div>
+                        <h3><a href="posts/post1.html">Introduction to Business Analytics</a></h3>
+                        <p>Learn about the fundamentals of business analytics and how it can transform your decision-making process.</p>
+                        <a href="posts/post1.html" class="read-more">Read More</a>
+                    </div>
+                </article>
+                
+                <article class="post-card">
+                    <div class="post-image">
+                        <img src="images/post2.jpg" alt="Data Visualization">
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="post-date">May 7, 2025</span>
+                            <span class="post-category">Data Visualization</span>
+                        </div>
+                        <h3><a href="posts/post2.html">Effective Data Visualization Techniques</a></h3>
+                        <p>Discover how to present your data in compelling visual formats that drive insights and action.</p>
+                        <a href="posts/post2.html" class="read-more">Read More</a>
+                    </div>
+                </article>
+                
+                <article class="post-card">
+                    <div class="post-image">
+                        <img src="images/post3.jpg" alt="Predictive Analytics">
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="post-date">May 5, 2025</span>
+                            <span class="post-category">Predictive Analytics</span>
+                        </div>
+                        <h3><a href="#">Predictive Analytics in Retail</a></h3>
+                        <p>Explore how retail businesses are leveraging predictive analytics to forecast trends and optimize operations.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Me</h2>
+                    <p>I'm a business analytics professional passionate about helping organizations leverage data to make better decisions. With a background in statistics and business intelligence, I share insights and best practices through this blog.</p>
+                    <p>My goal is to make analytics accessible and actionable for businesses of all sizes. Whether you're just starting your data journey or looking to enhance your existing analytics capabilities, you'll find valuable resources here.</p>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+                <div class="about-image">
+                    <img src="images/profile.jpg" alt="Profile Photo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Subscribe to My Newsletter</h2>
+                <p>Stay updated with the latest insights and articles on business analytics.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <p>Have questions or want to collaborate? Feel free to reach out.</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Subject">
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <div class="info-item">
+                        <h3>Email</h3>
+                        <p>hello@blogportfolio.com</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>Follow Me</h3>
+                        <div class="social-links">
+                            <a href="#" class="social-link">Twitter</a>
+                            <a href="#" class="social-link">LinkedIn</a>
+                            <a href="#" class="social-link">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html">Blog<span>Portfolio</span></a>
+                </div>
+                <nav class="footer-nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="footer-social">
+                    <a href="#" class="social-link">Twitter</a>
+                    <a href="#" class="social-link">LinkedIn</a>
+                    <a href="#" class="social-link">GitHub</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 BlogPortfolio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
