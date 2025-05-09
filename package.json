@@ -1,0 +1,14 @@
+{
+  "name": "portfolio-blog",
+  "version": "1.0.0",
+  "description": "A portfolio and blog website",
+  "scripts": {
+    "start": "npx serve ."
+  },
+  "dependencies": {
+    "serve": "^14.2.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+} 
