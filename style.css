@@ -1097,3 +1097,40 @@ img {
         height: 35px;
     }
 }
+
+/* Center-align all paragraphs */
+p {
+    text-align: center;
+}
+
+/* Dark mode styles */
+.dark-mode {
+    background: #181a1b;
+    color: #f1f1f1;
+}
+.dark-mode .header,
+.dark-mode .footer,
+.dark-mode .blog-content,
+.dark-mode .contact-section {
+    background: #23272f;
+    color: #f1f1f1;
+}
+.dark-mode .post-item,
+.dark-mode .sidebar-widget,
+.dark-mode .pagination-button,
+.dark-mode .btn,
+.dark-mode input,
+.dark-mode textarea {
+    background: #23272f;
+    color: #f1f1f1;
+    border-color: #444;
+}
+.dark-mode .btn-primary,
+.dark-mode .btn-light {
+    background: #3b82f6;
+    color: #fff;
+}
+.dark-mode .btn-white {
+    background: #fff;
+    color: #23272f;
+}
