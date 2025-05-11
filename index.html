@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Portfolio | Home</title>
+    <title>Blog Portfolio | Blog</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
 </head>
@@ -15,10 +15,10 @@
             </div>
             <nav class="nav">
                 <ul>
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blog.html" class="active">Blog</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
                 </ul>
             </nav>
             <div class="menu-toggle">
@@ -29,137 +29,224 @@
         </div>
     </header>
 
-    <section class="hero">
+    <section class="page-header">
         <div class="container">
-            <div class="hero-content">
-                <h1>Business Analytics Insights</h1>
-                <p>Sharing knowledge and expertise in business analytics and data-driven decision making.</p>
-                <a href="blog.html" class="btn btn-primary">Read My Blog</a>
+            <h1>Blog</h1>
+            <p>Insights and articles on business analytics</p>
+        </div>
+    </section>
+
+    <section class="blog-content">
+        <div class="container">
+            <div class="blog-layout">
+                <main class="blog-main">
+                    <div class="blog-filters">
+                        <div class="categories">
+                            <h3>Categories</h3>
+                            <ul class="category-list" id="category-filters">
+                                <li><a href="#" class="active" data-category="all">All Categories</a></li>
+                                <li><a href="#" data-category="data-analysis">Data Analysis</a></li>
+                                <li><a href="#" data-category="data-visualization">Data Visualization</a></li>
+                                <li><a href="#" data-category="predictive-analytics">Predictive Analytics</a></li>
+                                <li><a href="#" data-category="business-intelligence">Business Intelligence</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="posts-list" id="posts-container">
+                        <!-- Posts will be loaded dynamically via JavaScript -->
+
+                        <article class="post-item">
+                            <div class="post-image">
+                                <img src="images/post1.jpg" alt="Data Analysis">
+                            </div>
+                            <div class="post-content">
+                                <div class="post-meta">
+                                    <span class="post-date">May 9, 2025</span>
+                                    <span class="post-category">Data Analysis</span>
+                                </div>
+                                <h2><a href="posts/post1.html">Introduction to Business Analytics</a></h2>
+                                <p>Learn about the fundamentals of business analytics and how it can transform your decision-making process. We'll cover the key concepts, methodologies, and tools used in modern business analytics.</p>
+                                <a href="posts/post1.html" class="read-more">Read More</a>
+                            </div>
+                        </article>
+
+                        <article class="post-item">
+                            <div class="post-image">
+                                <img src="images/post2.jpg" alt="Data Visualization">
+                            </div>
+                            <div class="post-content">
+                                <div class="post-meta">
+                                    <span class="post-date">May 7, 2025</span>
+                                    <span class="post-category">Data Visualization</span>
+                                </div>
+                                <h2><a href="posts/post2.html">Effective Data Visualization Techniques</a></h2>
+                                <p>Discover how to present your data in compelling visual formats that drive insights and action. This post explores best practices for creating impactful charts, graphs, and interactive visualizations.</p>
+                                <a href="posts/post2.html" class="read-more">Read More</a>
+                            </div>
+                        </article>
+
+                        <article class="post-item">
+                            <div class="post-image">
+                                <img src="images/post3.jpg" alt="Predictive Analytics">
+                            </div>
+                            <div class="post-content">
+                                <div class="post-meta">
+                                    <span class="post-date">May 5, 2025</span>
+                                    <span class="post-category">Predictive Analytics</span>
+                                </div>
+                                <h2><a href="#">Predictive Analytics in Retail</a></h2>
+                                <p>Explore how retail businesses are leveraging predictive analytics to forecast trends and optimize operations. Learn about real-world applications and success stories from the retail industry.</p>
+                                <a href="#" class="read-more">Read More</a>
+                            </div>
+                        </article>
+
+                        <article class="post-item">
+                            <div class="post-image">
+                                <img src="images/post4.jpg" alt="Business Intelligence">
+                            </div>
+                            <div class="post-content">
+                                <div class="post-meta">
+                                    <span class="post-date">May 3, 2025</span>
+                                    <span class="post-category">Business Intelligence</span>
+                                </div>
+                                <h2><a href="#">Building Effective BI Dashboards</a></h2>
+                                <p>Learn how to design and implement business intelligence dashboards that provide actionable insights. This guide covers dashboard design principles, KPI selection, and implementation strategies.</p>
+                                <a href="#" class="read-more">Read More</a>
+                            </div>
+                        </article>
+
+                        <article class="post-item">
+                            <div class="post-image">
+                                <img src="images/post5.jpg" alt="Data Analysis">
+                            </div>
+                            <div class="post-content">
+                                <div class="post-meta">
+                                    <span class="post-date">May 1, 2025</span>
+                                    <span class="post-category">Data Analysis</span>
+                                </div>
+                                <h2><a href="#">Statistical Methods for Business Decisions</a></h2>
+                                <p>An overview of essential statistical techniques used in business decision-making. From hypothesis testing to regression analysis, this post covers the practical applications of statistics in business.</p>
+                                <a href="#" class="read-more">Read More</a>
+                            </div>
+                        </article>
+
+                        <article class="post-item">
+                            <div class="post-image">
+                                <img src="images/post6.jpg" alt="Data Visualization">
+                            </div>
+                            <div class="post-content">
+                                <div class="post-meta">
+                                    <span class="post-date">April 28, 2025</span>
+                                    <span class="post-category">Data Visualization</span>
+                                </div>
+                                <h2><a href="#">Color Theory in Data Visualization</a></h2>
+                                <p>Understanding how color choices impact the effectiveness of your data visualizations. Learn about color psychology, accessibility considerations, and how to select the right color palette for your data stories.</p>
+                                <a href="#" class="read-more">Read More</a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="pagination">
+                        <button class="pagination-button active">1</button>
+                        <button class="pagination-button">2</button>
+                        <button class="pagination-button">3</button>
+                        <button class="pagination-button next">Next</button>
+                    </div>
+                </main>
+
+                <aside class="blog-sidebar">
+                    <div class="sidebar-widget about-widget">
+                        <h3>About Me</h3>
+                        <div class="widget-content">
+                            <img src="images/profile.jpg" alt="Profile Photo" class="sidebar-profile">
+                            <p>I'm a business analytics professional passionate about helping organizations leverage data to make better decisions.</p>
+                            <a href="index.html#about" class="btn btn-small">Learn More</a>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-widget popular-posts">
+                        <h3>Popular Posts</h3>
+                        <div class="widget-content">
+                            <div class="popular-post">
+                                <img src="images/post1-small.jpg" alt="Data Analysis">
+                                <div>
+                                    <h4><a href="posts/post1.html">Introduction to Business Analytics</a></h4>
+                                    <span>May 9, 2025</span>
+                                </div>
+                            </div>
+                            <div class="popular-post">
+                                <img src="images/post2-small.jpg" alt="Data Visualization">
+                                <div>
+                                    <h4><a href="posts/post2.html">Effective Data Visualization Techniques</a></h4>
+                                    <span>May 7, 2025</span>
+                                </div>
+                            </div>
+                            <div class="popular-post">
+                                <img src="images/post3-small.jpg" alt="Predictive Analytics">
+                                <div>
+                                    <h4><a href="#">Predictive Analytics in Retail</a></h4>
+                                    <span>May 5, 2025</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-widget tags">
+                        <h3>Tags</h3>
+                        <div class="widget-content">
+                            <div class="tag-cloud">
+                                <a href="#" class="tag">Analytics</a>
+                                <a href="#" class="tag">Data</a>
+                                <a href="#" class="tag">Business</a>
+                                <a href="#" class="tag">Visualization</a>
+                                <a href="#" class="tag">Statistics</a>
+                                <a href="#" class="tag">Machine Learning</a>
+                                <a href="#" class="tag">AI</a>
+                                <a href="#" class="tag">Reporting</a>
+                                <a href="#" class="tag">KPIs</a>
+                                <a href="#" class="tag">Strategy</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-widget newsletter">
+                        <h3>Newsletter</h3>
+                        <div class="widget-content">
+                            <p>Subscribe to get the latest updates directly in your inbox.</p>
+                            <form class="sidebar-newsletter-form">
+                                <input type="email" placeholder="Your email address" required>
+                                <button type="submit" class="btn btn-primary">Subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+                </aside>
             </div>
         </div>
     </section>
 
-    <section class="recent-posts">
+    <section class="contact-section">
         <div class="container">
-            <div class="section-header">
-                <h2>Recent Posts</h2>
-                <a href="blog.html" class="view-all">View All Posts</a>
-            </div>
-            <div class="posts-grid" id="recent-posts-container">
-                <!-- Posts will be loaded dynamically via JavaScript -->
-                <article class="post-card">
-                    <div class="post-image">
-                        <img src="images/post1.jpg" alt="Data Analysis">
-                    </div>
-                    <div class="post-content">
-                        <div class="post-meta">
-                            <span class="post-date">May 9, 2025</span>
-                            <span class="post-category">Data Analysis</span>
-                        </div>
-                        <h3><a href="posts/post1.html">Introduction to Business Analytics</a></h3>
-                        <p>Learn about the fundamentals of business analytics and how it can transform your decision-making process.</p>
-                        <a href="posts/post1.html" class="read-more">Read More</a>
-                    </div>
-                </article>
-                
-                <article class="post-card">
-                    <div class="post-image">
-                        <img src="images/post2.jpg" alt="Data Visualization">
-                    </div>
-                    <div class="post-content">
-                        <div class="post-meta">
-                            <span class="post-date">May 7, 2025</span>
-                            <span class="post-category">Data Visualization</span>
-                        </div>
-                        <h3><a href="posts/post2.html">Effective Data Visualization Techniques</a></h3>
-                        <p>Discover how to present your data in compelling visual formats that drive insights and action.</p>
-                        <a href="posts/post2.html" class="read-more">Read More</a>
-                    </div>
-                </article>
-                
-                <article class="post-card">
-                    <div class="post-image">
-                        <img src="images/post3.jpg" alt="Predictive Analytics">
-                    </div>
-                    <div class="post-content">
-                        <div class="post-meta">
-                            <span class="post-date">May 5, 2025</span>
-                            <span class="post-category">Predictive Analytics</span>
-                        </div>
-                        <h3><a href="#">Predictive Analytics in Retail</a></h3>
-                        <p>Explore how retail businesses are leveraging predictive analytics to forecast trends and optimize operations.</p>
-                        <a href="#" class="read-more">Read More</a>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <section class="about" id="about">
-        <div class="container">
-            <div class="about-content">
-                <div class="about-text">
-                    <h2>About Me</h2>
-                    <p>I'm a business analytics professional passionate about helping organizations leverage data to make better decisions. With a background in statistics and business intelligence, I share insights and best practices through this blog.</p>
-                    <p>My goal is to make analytics accessible and actionable for businesses of all sizes. Whether you're just starting your data journey or looking to enhance your existing analytics capabilities, you'll find valuable resources here.</p>
-                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
-                </div>
-                <div class="about-image">
-                    <img src="images/profile.jpg" alt="Profile Photo">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="newsletter">
-        <div class="container">
-            <div class="newsletter-content">
-                <h2>Subscribe to My Newsletter</h2>
-                <p>Stay updated with the latest insights and articles on business analytics.</p>
-                <form class="newsletter-form">
-                    <input type="email" placeholder="Your email address" required>
-                    <button type="submit" class="btn btn-primary">Subscribe</button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <section class="contact" id="contact">
-        <div class="container">
-            <div class="section-header">
-                <h2>Get In Touch</h2>
-                <p>Have questions or want to collaborate? Feel free to reach out.</p>
-            </div>
-            <div class="contact-content">
-                <div class="contact-form">
-                    <form>
-                        <div class="form-group">
-                            <input type="text" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" placeholder="Your Email" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" placeholder="Subject">
-                        </div>
-                        <div class="form-group">
-                            <textarea placeholder="Your Message" required></textarea>
-                        </div>
+            <div class="contact-layout">
+                <div class="contact-form-container">
+                    <h1 class="contact-title">Get In Touch</h1>
+                    <p class="contact-subtitle">Have questions or want to collaborate? Feel free to reach out.</p>
+                    <form class="contact-form">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <input type="text" placeholder="Subject" required>
+                        <textarea placeholder="Your Message" required></textarea>
                         <button type="submit" class="btn btn-primary">Send Message</button>
                     </form>
                 </div>
-                <div class="contact-info">
-                    <div class="info-item">
-                        <h3>Email</h3>
-                        <p>hello@blogportfolio.com</p>
-                    </div>
-                    <div class="info-item">
-                        <h3>Follow Me</h3>
-                        <div class="social-links">
-                            <a href="#" class="social-link">Twitter</a>
-                            <a href="#" class="social-link">LinkedIn</a>
-                            <a href="#" class="social-link">GitHub</a>
-                        </div>
+                <div class="contact-info-container">
+                    <h2>Email</h2>
+                    <p>hello@blogportfolio.com</p>
+                    <h2>Follow Me</h2>
+                    <div class="contact-social-links">
+                        <a href="#" class="btn btn-light">Twitter</a>
+                        <a href="#" class="btn btn-light">LinkedIn</a>
+                        <a href="#" class="btn btn-light">GitHub</a>
                     </div>
                 </div>
             </div>
@@ -176,8 +263,8 @@
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="blog.html">Blog</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
                     </ul>
                 </nav>
                 <div class="footer-social">
