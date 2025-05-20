@@ -70,7 +70,7 @@ body {
 }
 
 /* Keep center alignment for specific elements */
-.page-header, .post-meta, .post-title, .post-author-bio, .post-tags, 
+.page-header, .post-meta, .post-title, .post-tags, 
 .related-posts h3, .sidebar-widget h3 {
     text-align: center;
     hyphens: none;
@@ -973,38 +973,7 @@ img {
     font-weight: 500;
 }
 
-.post-author-bio {
-    display: flex;
-    align-items: center;
-    padding: 30px;
-    background-color: var(--bg-light);
-    border-radius: 8px;
-    margin-bottom: 40px;
-}
-
-.post-author-bio .author-img {
-    width: 80px;
-    height: 80px;
-}
-
-.author-details {
-    flex: 1;
-}
-
-.author-details h3 {
-    margin-bottom: 10px;
-}
-
-.author-details p {
-    margin-bottom: 15px;
-    color: var(--text-light);
-}
-
-.author-social {
-    display: flex;
-    gap: 15px;
-}
-
+/* Post Navigation */
 .post-navigation {
     display: grid;
     grid-template-columns: 1fr 1fr;
