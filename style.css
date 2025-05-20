@@ -28,6 +28,90 @@ body {
     background-color: var(--bg-color);
 }
 
+/* Text alignment for blog content */
+.post-content, .post-content p, .post-content h1, .post-content h2, .post-content h3, 
+.post-content h4, .post-content h5, .post-content h6, .post-content .lead, 
+.post-content blockquote p, .post-content li, .post-item p {
+    text-align: justify;
+    text-justify: inter-word;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    word-spacing: -0.03em;
+    overflow-wrap: break-word;
+    word-break: normal;
+}
+
+/* Improve text flow for justified paragraphs */
+.post-content p, .post-item p {
+    max-width: 100%;
+    letter-spacing: -0.01em;
+    line-height: 1.8;
+    text-rendering: optimizeLegibility;
+    margin-bottom: 1.5em;
+}
+
+/* For headings, maintain better spacing */
+.post-content h1, .post-content h2, .post-content h3, 
+.post-content h4, .post-content h5, .post-content h6 {
+    word-spacing: normal;
+    line-height: 1.4;
+    margin-bottom: 0.8em;
+    margin-top: 1.5em;
+}
+
+/* For lists, ensure proper alignment */
+.post-content ul, .post-content ol {
+    display: block;
+    text-align: justify;
+    padding-left: 2em;
+    margin: 0 auto 1.5em;
+}
+
+/* Keep center alignment for specific elements */
+.page-header, .post-meta, .post-title, .post-author-bio, .post-tags, 
+.related-posts h3, .sidebar-widget h3 {
+    text-align: center;
+    hyphens: none;
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+}
+
+.post-content ul, .post-content ol {
+    display: inline-block;
+    text-align: justify;
+    margin: 0 auto;
+}
+
+/* Justify align categories */
+.categories {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto 30px;
+}
+
+.category-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.category-list a {
+    padding: 5px 15px;
+    border-radius: 20px;
+    background-color: var(--bg-light);
+    color: var(--text-light);
+    font-size: 0.9rem;
+    transition: var(--transition);
+}
+
 a {
     text-decoration: none;
     color: var(--primary-color);
@@ -47,7 +131,7 @@ img {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 24px;
 }
 
 /* Buttons */
@@ -506,9 +590,18 @@ img {
 }
 
 .blog-layout {
-    display: grid;
-    grid-template-columns: 7fr 3fr;
-    gap: 50px;
+    display: block;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.blog-main {
+    max-width: 100%;
+}
+
+.blog-sidebar {
+    max-width: 100%;
+    margin-top: 60px;
 }
 
 .blog-filters {
@@ -573,13 +666,13 @@ img {
 }
 
 .post-item {
-    display: grid;
-    grid-template-columns: 300px 1fr;
-    gap: 30px;
+    display: block;
+    margin-bottom: 40px;
     background-color: white;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    padding: 25px;
 }
 
 .post-item .post-image {
@@ -626,11 +719,6 @@ img {
 }
 
 /* Sidebar Widgets */
-.blog-sidebar {
-    position: sticky;
-    top: 100px;
-}
-
 .sidebar-widget {
     background-color: white;
     border-radius: 8px;
@@ -741,17 +829,25 @@ img {
 
 /* Blog Post Styles */
 .blog-post {
-    padding: 60px 0;
+    padding: 60px 0 80px;
 }
 
 .post-header {
-    margin-bottom: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    padding: 0 16px;
+    text-align: center;
 }
 
 .post-title {
-    font-size: 2.2rem;
-    margin: 15px 0;
+    font-size: 2.5rem;
+    margin: 20px 0;
     color: var(--secondary-color);
+    white-space: normal;
+    word-wrap: break-word;
+    word-spacing: normal;
 }
 
 .post-author {
@@ -793,41 +889,46 @@ img {
     object-fit: cover;
 }
 
+.post-main-content {
+    max-width: 100%;
+}
+
 .post-content-wrapper {
-    display: grid;
-    grid-template-columns: 7fr 3fr;
-    gap: 50px;
+    display: block;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 16px;
 }
 
 .post-content {
+    max-width: 100%;
     margin-bottom: 40px;
 }
 
 .post-content .lead {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     color: var(--text-color);
     margin-bottom: 30px;
+    max-width: 100%;
 }
 
 .post-content h2 {
-    font-size: 1.6rem;
-    margin: 40px 0 20px;
+    font-size: 1.8rem;
+    margin: 45px auto 25px;
     color: var(--secondary-color);
 }
 
 .post-content h3 {
-    font-size: 1.3rem;
-    margin: 30px 0 15px;
+    font-size: 1.5rem;
+    margin: 35px auto 20px;
     color: var(--secondary-color);
 }
 
-.post-content p {
-    margin-bottom: 20px;
-}
-
-.post-content ul,
-.post-content ol {
-    margin: 0 0 20px 20px;
+.post-content p, .post-content ul, .post-content ol,
+.post-content blockquote, .post-content h2, .post-content h3 {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .post-content li {
@@ -836,10 +937,11 @@ img {
 
 .post-content blockquote {
     border-left: 4px solid var(--primary-color);
-    padding: 15px 0 15px 20px;
-    margin: 30px 0;
+    padding: 20px 30px;
+    margin: 30px auto;
     background-color: var(--bg-light);
     border-radius: 0 4px 4px 0;
+    max-width: 90%;
 }
 
 .post-content blockquote p {
@@ -1007,13 +1109,31 @@ img {
 }
 
 /* Responsive Design */
+@media screen and (min-width: 1200px) {
+    .post-content-wrapper {
+        grid-template-columns: 8fr 3fr;
+    }
+    
+    .blog-layout {
+        grid-template-columns: 8fr 3fr;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .post-content-wrapper, 
+    .blog-layout {
+        grid-template-columns: 7fr 3fr;
+    }
+}
+
 @media screen and (max-width: 1024px) {
     .posts-grid {
         grid-template-columns: repeat(2, 1fr);
     }
     .post-content-wrapper,
     .blog-layout {
-        grid-template-columns: 2fr 1fr;
+        grid-template-columns: 7fr 3fr;
+        gap: 40px;
     }
 }
 
@@ -1057,6 +1177,7 @@ img {
     .post-content-wrapper,
     .blog-layout {
         grid-template-columns: 1fr;
+        gap: 30px;
     }
     .blog-sidebar {
         position: static;
@@ -1064,6 +1185,31 @@ img {
     .contact-info {
         padding-left: 0;
         border-left: none;
+    }
+    .post-content, .post-content p, .post-item p {
+        word-spacing: -0.01em;
+        letter-spacing: 0;
+        text-align: left;
+        hyphens: none;
+        -webkit-hyphens: none;
+        -moz-hyphens: none;
+        -ms-hyphens: none;
+    }
+    .container {
+        padding: 0 20px;
+    }
+    .post-title {
+        font-size: 2rem;
+    }
+    .post-content h2 {
+        font-size: 1.6rem;
+    }
+    .post-content h3 {
+        font-size: 1.3rem;
+    }
+    .post-content blockquote {
+        padding: 15px 20px;
+        max-width: 100%;
     }
 }
 
@@ -1098,8 +1244,8 @@ img {
     }
 }
 
-/* Center-align all paragraphs */
-p {
+/* Global paragraph style - excluding those in post content */
+p:not(.post-content p):not(.post-item p) {
     text-align: center;
 }
 
@@ -1133,4 +1279,78 @@ p {
 .dark-mode .btn-white {
     background: #fff;
     color: #23272f;
+}
+
+/* For better readability, limit paragraph width */
+@media screen and (min-width: 1400px) {
+    .post-content p, .post-content ul, .post-content ol {
+        max-width: 850px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* Update post titles to prevent awkward word breaks */
+h1, h2, h3, h4, h5, h6 {
+    white-space: normal;
+    word-wrap: break-word;
+    word-spacing: normal;
+    line-height: 1.3;
+}
+
+/* Match sidebar styling to main content */
+.post-sidebar {
+    max-width: 800px;
+    margin: 60px auto 0;
+    padding: 0 16px;
+}
+
+/* Responsive adjustments */
+@media screen and (min-width: 768px) {
+    .post-content-wrapper, 
+    .post-header,
+    .post-sidebar {
+        padding: 0 24px;
+    }
+}
+
+/* Updates for list page layout */
+.blog-layout {
+    display: block;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.blog-main {
+    max-width: 100%;
+}
+
+.blog-sidebar {
+    max-width: 100%;
+    margin-top: 60px;
+}
+
+/* Adjust post item layout */
+.post-item {
+    display: block;
+    margin-bottom: 40px;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    padding: 25px;
+}
+
+/* Responsive layout for tablet and desktop */
+@media screen and (min-width: 992px) {
+    .blog-layout {
+        max-width: 1000px;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 40px;
+    }
+    
+    .blog-sidebar {
+        margin-top: 0;
+    }
 }
