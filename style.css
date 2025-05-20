@@ -194,9 +194,10 @@ img {
 
 .header .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 20px 15px;
+    position: relative;
 }
 
 .logo a {
@@ -243,6 +244,8 @@ img {
     display: none;
     flex-direction: column;
     cursor: pointer;
+    position: absolute;
+    right: 15px;
 }
 
 .menu-toggle span {
@@ -521,9 +524,11 @@ img {
 }
 
 .footer-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
     margin-bottom: 30px;
 }
 
@@ -570,6 +575,38 @@ img {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     color: rgba(255, 255, 255, 0.5);
     font-size: 0.9rem;
+}
+
+.footer-nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+.footer-home-link {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.footer-home-link:hover {
+    color: white;
+}
+
+#theme-toggle {
+    background: none;
+    border: none;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: var(--transition);
+    padding: 0;
+}
+
+#theme-toggle:hover {
+    color: white;
 }
 
 /* Blog Page Styles */
@@ -1322,4 +1359,20 @@ h1, h2, h3, h4, h5, h6 {
     .blog-sidebar {
         margin-top: 0;
     }
+}
+
+#theme-toggle-header {
+    position: absolute;
+    right: 15px;
+    background: none;
+    border: none;
+    color: var(--text-color);
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: var(--transition);
+    padding: 0;
+}
+
+#theme-toggle-header:hover {
+    color: var(--primary-color);
 }
